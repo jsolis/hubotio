@@ -12,7 +12,10 @@
 
 <div class="list-group">
 	<a href="{{issue.html_url}}" class="list-group-item" ng-repeat="issue in issues">
-		<img src="{{issue.user.avatar_url}}" width="20" height="20" />
-		{{issue.title}}<br/>{{issue.body}}
+		<div class="plugin-title">
+			<img src="{{issue.user.avatar_url}}" width="30" height="30" />
+			{{issue.title}}
+		</div>
+		<span>{{issue.body}}</span>
 	</a>
 </div>
