@@ -9,6 +9,10 @@ angular.module('hubotioApp', [
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'partials/home',
+        controller: 'HomeCtrl'
+      })
+      .when('/main', {
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })

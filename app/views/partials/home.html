@@ -1,0 +1,18 @@
+<!--<div class="row">
+	<div class="col-md-4">
+		<h1>Hubot.io</h1>
+	</div>
+	<div class="col-md-4">
+		<img src="images/emblem@2x.png" width="50%" />
+	</div>
+</div>-->
+<h1 class="pull-left">Hubot.io</h1>
+<img class="pull-left" src="images/emblem@2x.png" width="25%" />
+<div class="clearfix"></div>
+
+<div class="list-group">
+	<a href="{{issue.html_url}}" class="list-group-item" ng-repeat="issue in issues">
+		<img src="{{issue.user.avatar_url}}" width="20" height="20" />
+		{{issue.title}}<br/>{{issue.body}}
+	</a>
+</div>
