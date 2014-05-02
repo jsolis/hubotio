@@ -94,3 +94,26 @@ body {
     font-weight: bold;
     font-size: 22px;
 }
+
+body {
+    padding-top: 0;
+}
+
+.hero {
+    /*background-image: url(https://hubot.github.com/images/layout/schematic.svg), url(https://hubot.github.com/images/layout/old-mathematics.png);*/
+    /*background-image: url(../images/old-mathematics.png);*/
+    background-color: #DEE9EE;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-weight: bold;
+    font-size: 75px;
+}
+
+.hero span.tagline {
+    font-size: 50px;
+}
+
+.hero>span.hero-contain {
+}
