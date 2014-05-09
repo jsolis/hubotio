@@ -1,11 +1,11 @@
 <h2>Hubot Plugins</h2>
 <div class="list-group">
-	<a href="{{issue.html_url}}" class="list-group-item" ng-repeat="issue in issues">
+	<a href="{{plugin.npmjsUrl || plugin.githubUrl}}" class="list-group-item" ng-repeat="plugin in plugins">
 		<div class="plugin-title">
-			<img src="{{issue.user.avatar_url}}" width="30" height="30" />
-			{{issue.title}}
+			<img src="{{plugin.avatarUrl}}" width="30" height="30" />
+			{{plugin.name}}
 		</div>
-		<div>{{issue.urls.github}}</div>
-		<div>{{issue.urls.npmjs}}</div>
+		<div>{{plugin.npmjsDescription}}</div>
+		<div>{{plugin.keywords}}</div>
 	</a>
 </div>
