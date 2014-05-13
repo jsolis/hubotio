@@ -6,6 +6,7 @@
     "ejs": "~0.8.4",
     "express": "~3.4.3",
     "lodash": "~2.4.1",
+    "moment": "^2.6.0",
     "mongoose": "~3.8.8",
     "npm-pkginfo": "0.0.3",
     "superagent": "^0.18.0"
