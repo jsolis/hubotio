@@ -8,11 +8,11 @@
 <div class="clearfix"></div>
 <div class="list-group">
 	<a href="{{plugin.npmjsUrl || plugin.githubUrl}}" class="list-group-item" ng-repeat="plugin in plugins">
-		<div class="plugin-title">
+		<h3>
 			<img src="{{plugin.avatarUrl}}" width="30" height="30" />
 			{{plugin.name}}
-		</div>
-		<div>{{plugin.npmjsDescription}}</div>
+		</h3>
+		<div class="lead">{{plugin.npmjsDescription}}</div>
 		<div class="date">created {{plugin.created | dateFormat}}</div>
 		<div class="date">last updated {{plugin.updated | dateFormat}}</div>
 		<div class="keywords">
