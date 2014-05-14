@@ -1,4 +1,11 @@
-<h2>Hubot Plugins</h2>
+<h2 class="pull-left">Hubot Plugins</h2>
+<form class="form-inline pull-right" role="form">
+	<div class="form-group has-feedback">
+		<input type="text" id="searchPlugins" class="form-control" placeholder="Search plugins">
+		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+	</div>
+</form>
+<div class="clearfix"></div>
 <div class="list-group">
 	<a href="{{plugin.npmjsUrl || plugin.githubUrl}}" class="list-group-item" ng-repeat="plugin in plugins">
 		<div class="plugin-title">
