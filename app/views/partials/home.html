@@ -6,10 +6,10 @@
 			{{plugin.name}}
 		</div>
 		<div>{{plugin.npmjsDescription}}</div>
-		<div class="date">created {{plugin.created}}</div>
-		<div class="date">last updated {{plugin.updated}}</div>
+		<div class="date">created {{plugin.created | dateFormat}}</div>
+		<div class="date">last updated {{plugin.updated | dateFormat}}</div>
 		<div class="keywords">
-			<span ng-repeat="keyword in plugin.keywords">{{keyword}} </span>
+			keywords: <span ng-repeat="keyword in plugin.keywords">{{keyword}} </span>
 		</div>
 	</a>
 </div>
